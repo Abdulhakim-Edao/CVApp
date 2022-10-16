@@ -12,7 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        binding.tlayout.tabGravity = TabLayout.GRAVITY_FILL
+        val myadapter = MyAdapter(this)
+        binding.vpager.adapter = myadapter
         TabLayoutMediator(binding.tlayout, binding.vpager){tab, position ->
             when(position){
                 0->{
@@ -20,16 +22,16 @@ class MainActivity : AppCompatActivity() {
                     tab.setIcon(R.drawable.home)
                 }
                 1->{
+                    tab.text = "About me"
+                    tab.setIcon(R.drawable.person)
+                }
+                2->{
                     tab.text = "Work"
                     tab.setIcon(R.drawable.work)
                 }
-                2->{
+                3->{
                     tab.text = "Contact"
                     tab.setIcon(R.drawable.contact)
-                }
-                3->{
-                    tab.text = "Help"
-                    tab.setIcon(R.drawable.help)
                 }
             }
         }.attach()
