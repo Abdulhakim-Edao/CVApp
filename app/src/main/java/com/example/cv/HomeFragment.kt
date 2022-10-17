@@ -17,18 +17,32 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-        val cat = arguments?.getString("category")
-        val name = arguments?.getString("name")
+
+        //recieve data from MainActivity to HomeFragment using Bundle
+        val bundle = arguments
+        if (bundle != null) {
+            val category = bundle.getString("category")
+            val name = bundle.getString("name")
+            if (category != null) {
+                string1.add(category)
+            }
+            if (name != null) {
+                string2.add(name)
+            }
+        }
+
+//        val cat = arguments?.getString("category")
+//        val name = arguments?.getString("name")
         string1.add("About Me")
         string1.add("Achievements")
         string1.add("Blogs")
         string1.add("Honors & Awards")
         string1.add("Achievements & Awards")
         string1.add("Blogs & Publications")
-        if(cat != null && name != null){
-            string2.add(cat)
-            string2.add(name)
-        }
+//        if(cat != null && name != null){
+//            string2.add(cat)
+//            string2.add(name)
+//        }
 
         string2.add("Abdulhakim Edao, ComPro student at MIU.")
         string2.add("I have won 3rd place in the 2019 MIU Hackathon.")
@@ -49,6 +63,12 @@ class HomeFragment : Fragment() {
         rvv.hasFixedSize()
     }
 
+    // override function to update the data in the recyclerview when the user add new skill in AddSkill.kt
+
+    override fun onResume() {
+        super.onResume()
+        myAdapter.notifyDataSetChanged()
+    }
 
 
 }

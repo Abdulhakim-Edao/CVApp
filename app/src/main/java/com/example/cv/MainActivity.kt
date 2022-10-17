@@ -36,6 +36,18 @@ class MainActivity : AppCompatActivity() {
         }.attach()
 
         floating_action_button.setOnClickListener {
+
+            //send data from MainActivity to HomeFragment using Bundle
+            val bundle = Bundle()
+            bundle.putString("category", "ComPro student at MIU.")
+            bundle.putString("name", "Abdulhakim Edao")
+            val fragment = HomeFragment()
+            fragment.arguments = bundle
+
+//            val intent2 = Intent(this, HomeFragment::class.java)
+//            intent2.putExtra("category", "ComPro student at MIU.")
+//            intent2.putExtra("name", "Abdulhakim Edao")
+//            startActivity(intent2)
             var intent = Intent(this, AddSkill::class.java)
             startActivity(intent)
         }
