@@ -1,5 +1,7 @@
 package com.example.cv
 
+import android.app.Activity.RESULT_OK
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -21,14 +23,10 @@ class HomeFragment : Fragment() {
         //recieve data from MainActivity to HomeFragment using Bundle
         val bundle = arguments
         if (bundle != null) {
-            val category = bundle.getString("category")
-            val name = bundle.getString("name")
-            if (category != null) {
-                string1.add(category)
-            }
-            if (name != null) {
-                string2.add(name)
-            }
+            val category = bundle.getString("category").toString()
+            val name = bundle.getString("name").toString()
+            string1.add(category)
+            string2.add(name)
         }
 
 //        val cat = arguments?.getString("category")
@@ -51,24 +49,37 @@ class HomeFragment : Fragment() {
         string2.add("I have won 3rd place in the 2019 MIU Hackathon.")
         string2.add("I have a blog on Medium.")
 
+
+
+
+
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        myAdapter = HomeAdapter(requireContext(), string1, string2)
-        rvv.adapter = myAdapter
-        rvv.layoutManager = LinearLayoutManager(activity)
-        rvv.hasFixedSize()
-    }
-
-    // override function to update the data in the recyclerview when the user add new skill in AddSkill.kt
-
+    //update the recyclerview when the fragment is resumed from the AddSkill activity
     override fun onResume() {
         super.onResume()
         myAdapter.notifyDataSetChanged()
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        myAdapter = HomeAdapter(requireContext(), string1, string2)
+        rvv.adapter = myAdapter
+        rvv.layoutManager = LinearLayoutManager(activity)
+        rvv.hasFixedSize()
+
+    }
+
+    //update the recyclerview when the fragment is resumed from the AddSkill activity after the view is created
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        myAdapter.notifyDataSetChanged()
+    }
+
+    // override function to update the data in the recyclerview when the user add new skill in AddSkill.kt
+
+
 
 
 }

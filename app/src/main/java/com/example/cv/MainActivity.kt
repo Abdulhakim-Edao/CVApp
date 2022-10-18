@@ -3,10 +3,12 @@ package com.example.cv
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.isVisible
 import com.example.cv.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -24,32 +26,31 @@ class MainActivity : AppCompatActivity() {
                     tab.text = "Home"
                 }
                 1->{
+//                    floating_action_button.isVisible = false
                     tab.text = "About me"
                 }
                 2->{
+//                    floating_action_button.isVisible = false
                     tab.text = "Work"
                 }
                 3->{
+//                    floating_action_button.isVisible = false
                     tab.text = "Contact"
                 }
             }
         }.attach()
 
+        // check if the tab is homefragment and set the visibility of the floating action button to true
+        binding.vpager.registerOnPageChangeCallback(object : androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                floating_action_button.isVisible = position == 0
+            }
+        })
         floating_action_button.setOnClickListener {
-
-            //send data from MainActivity to HomeFragment using Bundle
-            val bundle = Bundle()
-            bundle.putString("category", "ComPro student at MIU.")
-            bundle.putString("name", "Abdulhakim Edao")
-            val fragment = HomeFragment()
-            fragment.arguments = bundle
-
-//            val intent2 = Intent(this, HomeFragment::class.java)
-//            intent2.putExtra("category", "ComPro student at MIU.")
-//            intent2.putExtra("name", "Abdulhakim Edao")
-//            startActivity(intent2)
             var intent = Intent(this, AddSkill::class.java)
             startActivity(intent)
         }
+
     }
 }
