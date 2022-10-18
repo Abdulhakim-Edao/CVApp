@@ -2,4 +2,21 @@
     <string name="app_name">CV</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MIU">Maharishi International University</string>
+    <string name="MSc">MSc in Computer Science</string>
+    <string name="aboutMe">Talented software developer with more than 5 years of hands-on experience developing and maintaining full stack software applications using modern Agile SDLC methodologies, design patterns, and other industry standard techniques. Proficient in the creation, optimization, and integration of data-intensive systems, databases, queries, and analyses, driving key decision-making with vital information. Technologies known include Java, JavaScript, Spring, Hibernate, jQuery, PostgreSQL, VS Code, and IntelliJ IDEA.</string>
+    <string name="about_me">About Me</string>
+    <string name="education">Education</string>
+    <string name="bsc">BSc in Computer Science</string>
+    <string name="aau">Addis Ababa University</string>
+    <string name="ocp">Oracle Certified Professional</string>
+    <string name="java_se_8_programmer">Java SE 8 Programmer</string>
+    <string name="microsoft_certified">Microsoft Certified</string>
+    <string name="azure_developer_associate">Azure Developer Associate</string>
+    <string name="ppsae">Power Platform Solution Architect Expert</string>
+    <string name="certification">Certification</string>
+    <string name="miu_image">miu image</string>
+    <string name="aau_image">aau image</string>
+    <string name="java_image">java image</string>
+    <string name="microsoft_image">microsoft image</string>
 </resources>

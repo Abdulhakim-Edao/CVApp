@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".AboutMeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -36,8 +35,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="About Me"
-                        android:textSize="18sp" />
+                        android:text="@string/about_me"
+                        android:textSize="25sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -51,7 +50,10 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Talented software developer with more than 5 years of hands-on experience developing and maintaining full stack software applications using modern Agile SDLC methodologies, design patterns, and other industry standard techniques.  Proficient in the creation, optimization, and integration of data-intensive systems, databases, queries, and analyses, driving key decision-making with vital information. Technologies known include Java, JavaScript, Spring, Hibernate, jQuery, PostgreSQL, VS Code, and IntelliJ IDEA."
+                            android:text="@string/aboutMe"
+                            android:justificationMode="inter_word"
+                            android:lineSpacingExtra="5sp"
+                            android:fontFamily="sans-serif"
                             android:textSize="16sp" />
 
                     </LinearLayout>
@@ -80,14 +82,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="Education"
-                        android:textSize="18sp" />
+                        android:text="@string/education"
+                        android:textSize="25sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/horizontal_margin_8"
-
                         android:clickable="true"
                         android:focusable="true"
                         android:orientation="horizontal"
@@ -97,7 +98,8 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/miu" />
+                            android:src="@drawable/miu"
+                            android:contentDescription="@string/miu_image" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -108,19 +110,17 @@
                             android:orientation="vertical">
 
                             <TextView
-
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:ellipsize="end"
                                 android:maxLines="1"
-                                android:text="Maharishi International University"
+                                android:text="@string/MIU"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="MSc in Computer Science "
-
+                                android:text="@string/MSc"
                                 android:textSize="12sp" />
                         </LinearLayout>
 
@@ -129,7 +129,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/horizontal_margin_8"
-
                         android:clickable="true"
                         android:focusable="true"
                         android:orientation="horizontal"
@@ -139,7 +138,8 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/amazon" />
+                            android:src="@drawable/aau"
+                            android:contentDescription="@string/aau_image" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -155,56 +155,13 @@
                                 android:layout_height="wrap_content"
                                 android:ellipsize="end"
                                 android:maxLines="1"
-                                android:text="Maharishi International University"
+                                android:text="@string/aau"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="MSc in Computer Science "
-
-                                android:textSize="12sp" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/horizontal_margin_8"
-
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:orientation="horizontal"
-                        android:padding="8dp">
-
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:src="@drawable/amazon" />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
-                            android:gravity="center_vertical"
-                            android:orientation="vertical">
-
-                            <TextView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:ellipsize="end"
-                                android:maxLines="1"
-                                android:text="Maharishi International University"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="MSc in Computer Science "
-
+                                android:text="@string/bsc"
                                 android:textSize="12sp" />
                         </LinearLayout>
 
@@ -235,8 +192,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="Certification"
-                        android:textSize="18sp" />
+                        android:text="@string/certification"
+                        android:textSize="25sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -252,7 +209,8 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/java" />
+                            android:src="@drawable/java"
+                            android:contentDescription="@string/java_image" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -268,14 +226,13 @@
                                 android:layout_height="wrap_content"
                                 android:ellipsize="end"
                                 android:maxLines="1"
-                                android:text="Oracle Certified Professional"
+                                android:text="@string/ocp"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Java SE 8 Programmer"
-
+                                android:text="@string/java_se_8_programmer"
                                 android:textSize="12sp" />
                         </LinearLayout>
 
@@ -294,7 +251,8 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/amazon" />
+                            android:src="@drawable/mc"
+                            android:contentDescription="@string/microsoft_image" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -310,14 +268,13 @@
                                 android:layout_height="wrap_content"
                                 android:ellipsize="end"
                                 android:maxLines="1"
-                                android:text="Maharishi International University"
+                                android:text="@string/microsoft_certified"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="MSc in Computer Science "
-
+                                android:text="@string/azure_developer_associate"
                                 android:textSize="12sp" />
                         </LinearLayout>
 
@@ -326,7 +283,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/horizontal_margin_8"
-
                         android:clickable="true"
                         android:focusable="true"
                         android:orientation="horizontal"
@@ -336,7 +292,8 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/amazon" />
+                            android:src="@drawable/mce"
+                            android:contentDescription="@string/microsoft_image" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -352,14 +309,13 @@
                                 android:layout_height="wrap_content"
                                 android:ellipsize="end"
                                 android:maxLines="1"
-                                android:text="Maharishi International University"
+                                android:text="@string/microsoft_certified"
                                 android:textSize="18sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="MSc in Computer Science "
-
+                                android:text="@string/ppsae"
                                 android:textSize="12sp" />
                         </LinearLayout>
 
