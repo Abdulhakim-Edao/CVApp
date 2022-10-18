@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="company_name" >
+        <item>Alphabet</item>
+        <item>Meta</item>
+        <item>Amazon</item>
+
+    </string-array>
+    <string-array name="job_title" >
+        <item>Software Engineer</item>
+        <item>Software Developer/analyst</item>
+        <item>Senior Software Developer</item>
+    </string-array>
+    <string-array name="date" >
+        <item>2019-2020</item>
+        <item>2018-2019</item>
+        <item>2017-2018</item>
+    </string-array>
+    <string-array name="description" >
+        <item>Led the JAVA team for development of SOAP web services using Apache CXF.
+
+Worked on the generation of PAWS daily matrix and improved its performance dramatically, earlier it used to take 10 to 12 hours for daily matrix generation and now it hardly takes 20 to 25 minutes.
+Performed unit testing for all the developed WSDL on Soap UI.
+Helped QA and clarified their doubts while regression testing of the module.</item>
+
+        <item>Worked with various Windows platforms and tools in support of LeaseNet, a proprietary software application to include Windows Server 2012, IIS 7.0, and SQL Server 2005, 2008 R2, and 2012
+
+Learned and performed database operations by way of on the job training to include backups, restores, script creation, schema alterations and enhancements, and job creation for automating services
+Assisted with application maintenance and development using .NET and classic ASP code writing in C# and JavaScript
+Performed system testing and maintained and created documentation for the application
+Acquired increasing levels of responsibility and expertise to include leading work on a project for an energy company to upgrade their system capabilities with our product</item>
+
+        <item>Senior Developer on the [company name] Advance fund raising web product. Instrumental in releases 9.6 to present. Vast experience using Advance metadata. Software Development using C#, VB.NET, JQuery and JavaScript. Database experience using ORACLE and PL/SQL.
+
+Designed and coded enhancements.
+Resolved internal and external defects.
+Participated in daily scrums. Provided technical advice on bugs and enhancements.
+Assisted the Advance Support team when necessary.
+</item>
+    </string-array>
+</resources>

@@ -1,7 +1,6 @@
 package com.example.cv
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,7 +20,7 @@ class HomeAdapter(var context: Context, var str1:ArrayList<String>, var str2:Arr
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.ll.apply{
+        holder.itemView.linear.apply{
             tv1.text = string1[position]
             tv2.text = string2[position]
         }
