@@ -8,7 +8,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +58,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/aboutMe"
                             android:justificationMode="inter_word"
-                            android:lineSpacingExtra="5sp"
+                            android:lineSpacingExtra="3sp"
                             android:fontFamily="sans-serif"
                             android:textSize="16sp" />
 
@@ -124,7 +130,7 @@
                                 android:textSize="12sp" />
                         </LinearLayout>
 
-                </LinearLayout>
+                    </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -31,23 +31,26 @@ class HomeFragment : Fragment() {
 
 //        val cat = arguments?.getString("category")
 //        val name = arguments?.getString("name")
-        string1.add("About Me")
-        string1.add("Achievements")
+        string1.add("Career Note")
+        string1.add("Work Experience")
         string1.add("Blogs")
         string1.add("Honors & Awards")
         string1.add("Achievements & Awards")
-        string1.add("Blogs & Publications")
 //        if(cat != null && name != null){
 //            string2.add(cat)
 //            string2.add(name)
 //        }
 
-        string2.add("Abdulhakim Edao, ComPro student at MIU.")
-        string2.add("I have won 3rd place in the 2019 MIU Hackathon.")
+        string2.add("ComPro student at MIU. Software Developer.")
+        string2.add("Languages: Java, JavaScript, PL/SQL\n" +
+                "Frameworks/Web: Spring (Boot, MVC, Security), Hibernate,\n" +
+                "JDBC\n" +
+                "Microservices/Cloud: AWS, GCP, Docker, Kubernetes, Kafka " +
+                "\nDatabases: Oracle PL/SQL, MySQL, MongoDB " +
+                "\nTools: IntelliJ IDEA, Maven, GitHub, GitLab, UML")
         string2.add("I have a blog on Medium.")
         string2.add("Abdulhakim Edao, ComPro student at MIU.")
         string2.add("I have won 3rd place in the 2019 MIU Hackathon.")
-        string2.add("I have a blog on Medium.")
 
 
 

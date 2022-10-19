@@ -12,9 +12,6 @@
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="16dp"
         android:clickable="true"
         android:foreground="?selectableItemBackground"
         card_view:cardBackgroundColor="#FFFF"
@@ -27,15 +24,11 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="662dp"
+                android:layout_height="0dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="24dp"
                 android:fillViewport="true"
-                card_view:layout_constraintBottom_toBottomOf="parent"
-                card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintHorizontal_bias="0.0"
-                card_view:layout_constraintStart_toStartOf="parent"
-                card_view:layout_constraintTop_toBottomOf="@+id/name">
+                tools:ignore="MissingConstraints">
 
 
                 <androidx.recyclerview.widget.RecyclerView
